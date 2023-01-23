@@ -1,0 +1,49 @@
+description: A dynamic tiling Wayland compositor based on wlroots that doesn't sacrifice on its looks.
+source: https://github.com/hyprwm/Hyprland
+dependencies:
+  - hyprland
+  # Lock screen
+  - swaylock-effects
+  - swayidle
+  # wallpaper
+  - dot:swww
+  # colorpicker
+  - hyprpicker-git
+  # clipboard
+  - wl-clipboard
+  # home directories
+  - xdg-user-dirs
+  # .desktop launcher
+  - dex
+  # Authentication agent
+  - polkit
+  - polkit-gnome
+  # Screenshot helper script
+  - grimblast-git
+  # https://wiki.hyprland.org/Useful-Utilities/Must-have/
+  - pipewire
+  - pipewire-alsa
+  - pipewire-pulse
+  - pipewire-jack
+  ## https://wiki.hyprland.org/Useful-Utilities/Screen-Sharing/
+  - wireplumber
+  - xdg-desktop-portal-hyprland-git
+  - qt5-wayland
+  - qt6-wayland
+  # Custom setup
+  - dot:mako
+  - dot:rofi-wayland
+post_install: |
+  xdg-user-dirs-update
+  mkdir -p ~/Pictures/Screenshots
+  sudo usermod -aG users,video,storage,optical,input,audio $USER
+links:
+  - src: hyprland.conf
+    dest: ~/.config/hypr/hyprland.conf
+  - src: catppuccin-mocha.conf
+    dest: ~/.config/hypr/catppuccin-mocha.conf
+  - src: scripts
+    dest: ~/.config/hypr/scripts
+  - src: custom.conf
+    dest: ~/.config/hypr/custom.conf
+    copy: true

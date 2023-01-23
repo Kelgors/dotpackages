@@ -1,0 +1,19 @@
+pre_install: |
+  paru -Sy
+dependencies:
+  - dot:base
+  - rust
+  - rust-src
+  - dot:gpu-amd-intel
+  - dot:greetd-tuigreet
+  - dot:wm-hyprland
+  - dot:kelgors-terminal
+  - dot:kelgors-desktop
+  - dot:flatpak
+  - flatpak:md.obsidian.Obsidian
+  - flatpak:net.lutris.Lutris
+  - flatpak:com.github.IsmaelMartinez.teams_for_linux
+  - flatpak:org.filezillaproject.Filezilla
+  - flatpak:org.inkscape.Inkscape
+  - flatpak:org.musicbrainz.Picard
+  - flatpak:org.onlyoffice.desktopeditors

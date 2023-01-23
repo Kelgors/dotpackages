@@ -1,0 +1,79 @@
+#!/bin/sh
+
+rosewater='f5e0dc'
+flamingo='f2cdcd'
+pink='f5c2e7'
+mauve='cba6f7'
+red='f38ba8'
+maroon='eba0ac'
+peach='fab387'
+yellow='f9e2af'
+green='a6e3a1'
+teal='94e2d5'
+sky='89dceb'
+sapphire='74c7ec'
+blue='89b4fa'
+lavender='b4befe'
+
+text='cdd6f4'
+subtext1='bac2de'
+subtext0='a6adc8'
+
+overlay2='9399b2'
+overlay1='7f849c'
+overlay0='6c7086'
+
+surface2='585b70'
+surface1='45475a'
+surface0='313244'
+
+base='1e1e2e'
+mantle='181825'
+crust='11111b'
+
+# Colors
+black='00000000'
+
+swaylock -fFS \
+  --ignore-empty-password \
+  --show-failed-attempts \
+  --hide-keyboard-layout \
+  --indicator-caps-lock \
+  --color ${base} \
+  --font 'NotoSansMono Nerd Font' --font-size 70 \
+  --key-hl-color $mauve \
+  --caps-lock-key-hl-color $blue \
+  --bs-hl-color $red \
+  --caps-lock-bs-hl-color $red \
+  --indicator-radius 200 \
+  --indicator-thickness 20 \
+  --inside-color $black \
+  --inside-clear-color $black \
+  --inside-caps-lock-color $black \
+  --inside-ver-color $red \
+  --inside-wrong-color $mauve \
+  --layout-bg-color $sky \
+  --layout-border-color $sky \
+  --layout-text-color $base \
+  --line-color $base \
+  --line-clear-color $red \
+  --line-caps-lock-color $base \
+  --line-ver-color $base \
+  --line-wrong-color $base \
+  --ring-color $red \
+  --ring-clear-color $base \
+  --ring-caps-lock-color $blue \
+  --ring-ver-color $red \
+  --ring-wrong-color $mauve \
+  --separator-color $base \
+  --text-color $text \
+  --text-clear-color $text \
+  --text-caps-lock-color $text \
+  --text-ver-color $base \
+  --text-wrong-color $base \
+  --timestr "%I:%M %p" \
+  --datestr "%d / %m / %y" \
+  --fade-in "0.2" \
+  --effect-blur "7x3" \
+  --effect-greyscale \
+  --clock --indicator

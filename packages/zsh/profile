@@ -1,0 +1,11 @@
+editor="vi"
+[[ -f /usr/bin/vim ]] && editor="vim"
+[[ -f /usr/bin/nvim ]] && editor="nvim"
+export EDITOR="/usr/bin/$editor"
+[[ -f /usr/bin/firefox ]] && export BROWSER="/usr/bin/firefox"
+
+alias ssh="TERM=xterm-256color /usr/bin/ssh"
+alias ll="/usr/bin/exa -l"
+alias lla="/usr/bin/exa -la"
+[[ -f $(command -v batcat) ]] && [[ ! -f $(command -v bat) ]] && alias bat="/usr/bin/batcat"
+[[ -f $(command -v fdfind) ]] && [[ ! -f $(command -v fd) ]] && alias fd="/usr/bin/fdfind"

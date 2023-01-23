@@ -1,0 +1,22 @@
+dependencies:
+  - dot:powerlevel10k
+  - zsh
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+  - zsh-history-substring-search
+  - zsh-theme-powerlevel10k
+post_install: |
+  # Install manjaro zsh configuration
+  curl -sL https://github.com/Chrysostomus/manjaro-zsh-config/archive/master.tar.gz | tar xz
+  cd manjaro-zsh-config-master
+  zshdir=/usr/share/zsh
+  # remove powerline10k config
+  sed -i 's/source \/usr\/share\/zsh\/p10k/# source \/usr\/share\/zsh\/p10k/' manjaro-zsh-prompt
+  # copy files
+  sudo install -Dm644 manjaro-zsh-config $zshdir/manjaro-zsh-config
+  sudo install -Dm644 manjaro-zsh-prompt $zshdir/manjaro-zsh-prompt
+links:
+  - zshrc:~/.zshrc
+  - src: profile
+    dest: ~/.$USER.profile
+    copy: true

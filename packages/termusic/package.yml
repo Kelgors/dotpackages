@@ -1,0 +1,8 @@
+description: Terminal Music and Podcast Player written in Rust
+source: https://github.com/tramhao/termusic
+dependencies:
+  - pipewire
+  - pipewire-alsa
+  - pipewire-pulse
+  - pipewire-jack
+  - termusic

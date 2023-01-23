@@ -1,0 +1,12 @@
+package_managers:
+  os:
+    multiple: true
+    commands:
+      install: paru --needed --noconfirm -S <package>
+      uninstall: paru -Runs --noconfirm <package>
+  flatpak:
+    multiple: false
+    commands:
+      install: sudo flatpak install -y <package>
+      uninstall: sudo flatpak uninstall -y <package>
+      clean: sudo flatpak uninstall --unused

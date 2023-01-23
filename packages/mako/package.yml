@@ -1,0 +1,7 @@
+description: A lightweight notification daemon for Wayland. Works on Sway.
+source: https://github.com/emersion/mako
+dependencies:
+  - libnotify
+  - mako
+links:
+  - config:~/.config/mako/config

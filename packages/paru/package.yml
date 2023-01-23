@@ -1,0 +1,12 @@
+pre_install: |
+  sudo pacman -S --needed base-devel
+  if [[ ! -d /tmp/paru ]];
+  then
+    git clone https://aur.archlinux.org/paru.git /tmp/paru
+    cd /tmp/paru
+  else
+    cd /tmp/paru
+    git pull
+  fi
+  makepkg -sif --noconfirm
+  paru -Syu

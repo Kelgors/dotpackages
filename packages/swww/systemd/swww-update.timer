@@ -1,0 +1,9 @@
+[Unit]
+Description=swww-update
+
+[Timer]
+OnCalendar=*-*-* *:00/5:00
+Persistant=true
+
+[Install]
+WantedBy=timers.target

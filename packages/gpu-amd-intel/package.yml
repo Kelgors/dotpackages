@@ -1,0 +1,5 @@
+description: driver for 3D acceleration and video decoding
+dependencies:
+  - mesa
+  - libva-mesa-driver
+  - mesa-vdpau

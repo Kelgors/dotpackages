@@ -1,0 +1,10 @@
+description: A Solution to your Wayland Wallpaper Woes
+source: https://github.com/Horus645/swww
+dependencies:
+  - swww
+links:
+  - systemd/swww-update.service:~/.config/systemd/user/swww-update.service
+  - systemd/swww-update.timer:~/.config/systemd/user/swww-update.timer
+post_links: |
+  systemctl --user daemon-reload
+  systemctl --user enable swww-update.timer

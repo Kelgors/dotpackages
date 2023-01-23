@@ -1,0 +1,15 @@
+pre_install: |
+  paru -Syu
+dependencies:
+  - dot:base
+  - rust
+  - dot:zsh
+  - dot:nvim
+  - dot:tmux
+  - dot:greetd-tuigreet
+  - dot:wm-hyprland
+  - dot:alacritty
+  - firefox
+  - dropbox-cli
+  - dot:flatpak
+  - flatpak:md.obsidian.Obsidian

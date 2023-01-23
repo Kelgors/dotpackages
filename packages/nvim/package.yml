@@ -1,0 +1,4 @@
+description: hyperextensible Vim-based text editor
+source: https://github.com/neovim/neovim
+dependencies:
+  - neovim

@@ -1,0 +1,19 @@
+dependencies:
+  - curl
+post_install: |
+  if [[ ! -f /usr/share/fonts/TTF/NotoSansMono-Regular-Nerd-Font-Complete.ttf ]];
+  then
+    version=v2.3.2
+    mkdir -p /tmp/fonts
+    cd /tmp/fonts
+    curl -o NotoSansMono-Black-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Black%20Nerd%20Font%20Complete.ttf
+    curl -o NotoSansMono-Bold-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
+    curl -o NotoSansMono-Light-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Light%20Nerd%20Font%20Complete.ttf
+    curl -o NotoSansMono-Medium-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Medium%20Nerd%20Font%20Complete.ttf
+    curl -o NotoSansMono-Regular-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete.ttf
+    curl -o NotoSansMono-Thin-Nerd-Font-Complete.ttf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/patched-fonts/Noto/Sans-Mono/complete/Noto%20Sans%20Mono%20Thin%20Nerd%20Font%20Complete.ttf
+    curl -O https://raw.githubusercontent.com/ryanoasis/nerd-fonts/$version/LICENSE
+    sudo install -dm0755 /usr/share/fonts/TTF
+    sudo install -Dm0644 /tmp/fonts/*.ttf /usr/share/fonts/TTF
+    sudo install -Dm644 LICENSE -t /usr/share/licenses/nerd-fonts-noto-sans-mono
+  fi

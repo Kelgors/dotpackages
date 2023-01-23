@@ -1,0 +1,12 @@
+dependencies:
+  - virt-manager
+  - qemu-desktop
+  - dnsmasq
+  - iptables-nft
+post_install: |
+  sudo sed -i 's/# unix_sock_ro_perms =/unix_sock_ro_perms =/' /etc/libvirt/libvirtd.conf
+  sudo sed -i 's/# unix_sock_group =/unix_sock_group =/' /etc/libvirt/libvirtd.conf
+  sudo usermod -aG libvirt
+  sudo sed -i "s/# user = \"libvirt-qemu\"/user = \"$USER\"/" /etc/libvirt/qemu.conf
+  sudo sed -i "s/# group = \"libvirt-qemu\"/group = \"$USER\"/" /etc/libvirt/qemu.conf
+  sudo virsh net-autostart default

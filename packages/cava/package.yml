@@ -1,0 +1,11 @@
+description: Cross-platform Audio Visualizer
+source: https://github.com/karlstav/cava
+dependencies:
+  - cava
+  - pipewire
+  - pipewire-alsa
+  - pipewire-pulse
+  - pipewire-jack
+links:
+  - src: config
+    dest: ~/.config/cava/config

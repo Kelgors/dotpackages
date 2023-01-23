@@ -1,0 +1,7 @@
+description: Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
+source: https://github.com/romkatv/powerlevel10k
+dependencies:
+  - dot:fonts-notosansmono
+links:
+  - src: p10k.zsh
+    dest: ~/.p10k.zsh

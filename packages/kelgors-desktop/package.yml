@@ -1,0 +1,12 @@
+description: All applications used by any desktop on any of my hosts
+dependencies:
+  - dot:alacritty
+  - firefox
+  - dropbox-cli
+  - pavucontrol
+  - vlc
+  - vscodium-bin
+  - thunar
+  - thunar-volman
+  - thunar-archive-plugin
+  - file-roller

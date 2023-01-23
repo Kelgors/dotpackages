@@ -1,0 +1,10 @@
+description: A window switcher, Application launcher and dmenu replacement.
+source: https://github.com/lbonn/rofi
+dependencies:
+  - rofi-lbonn-wayland-git
+post_install: |
+  mkdir -p ~/.local/share/rofi/themes
+  curl -sL https://github.com/catppuccin/rofi/archive/main.tar.gz | tar xz
+  install -Dm644 rofi-main/basic/.local/share/rofi/themes/catppuccin-*.rasi ~/.local/share/rofi/themes
+links:
+  - config.rasi:~/.config/rofi/config.rasi

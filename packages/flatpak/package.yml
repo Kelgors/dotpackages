@@ -1,0 +1,6 @@
+description: Flatpak is a system for building, distributing and running sandboxed desktop applications on Linux.
+source: https://github.com/flatpak/flatpak
+dependencies:
+  - flatpak
+post_install: |
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

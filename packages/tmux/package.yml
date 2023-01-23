@@ -1,0 +1,7 @@
+description: "tmux is a terminal multiplexer"
+source: https://github.com/tmux/tmux
+dependencies:
+  - tmux
+links:
+  - src: tmux.conf
+    dest: ~/.tmux.conf

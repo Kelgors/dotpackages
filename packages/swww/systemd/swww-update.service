@@ -1,0 +1,6 @@
+[Unit]
+Description=swww-update
+
+[Service]
+Type=oneshot
+ExecStart=sh -c '/usr/bin/swww img $(/usr/bin/shuf -n1 -e $(/usr/bin/ls ~/Dropbox/Pictures/Wallpapers/current/*))'

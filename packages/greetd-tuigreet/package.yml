@@ -1,0 +1,6 @@
+dependencies:
+  - greetd
+  - greetd-tuigreet
+post_install: |
+  sudo cp -f $PACKAGE/config.toml /etc/greetd/config.toml
+  sudo systemctl enable greetd.service

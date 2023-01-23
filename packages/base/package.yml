@@ -1,0 +1,17 @@
+description: basic commands for every setup
+dependencies:
+  - base-devel
+  - sudo
+  - vi
+  - curl
+  - git
+  - openssh
+  - man-db
+  - exa
+  - fzf
+  - git
+  - tar
+  - gzip
+  - htop
+  - ripgrep
+  - neovim

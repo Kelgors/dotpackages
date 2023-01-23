@@ -1,0 +1,6 @@
+description: Yet another cross-platform graphical process/system monitor
+dependencies:
+  - bottom
+links:
+  - src: bottom.toml
+    dest: ~/.config/bottom/bottom.toml

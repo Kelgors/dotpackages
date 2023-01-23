@@ -1,0 +1,9 @@
+description: A fast, cross-platform, OpenGL terminal emulator
+source: https://github.com/alacritty/alacritty
+dependencies:
+  - alacritty
+links:
+  - src: alacritty.yml
+    dest: ~/.config/alacritty/alacritty.yml
+  - src: catppuccin-mocha.yml
+    dest: ~/.config/alacritty/catppuccin-mocha.yml

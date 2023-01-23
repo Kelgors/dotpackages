@@ -1,0 +1,9 @@
+description: All applications used in any terminal on any of my hosts
+dependencies:
+  - dot:zsh
+  - dot:nvim
+  - dot:tmux
+  - dot:bottom
+  - dot:cava
+  - dot:termusic
+  - tty-clock-git
