@@ -19,3 +19,7 @@ dependencies:
 - flatpak:org.onlyoffice.desktopeditors
 - wget
 - curl
+- vim
+- vi
+- neovim
+- emacs
