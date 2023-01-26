@@ -7,3 +7,4 @@ dependencies:
   - dot:cava
   - dot:termusic
   - tty-clock-git
+  - amfora

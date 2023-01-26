@@ -9,3 +9,5 @@ alias ll="/usr/bin/exa -l"
 alias lla="/usr/bin/exa -la"
 [[ -f $(command -v batcat) ]] && [[ ! -f $(command -v bat) ]] && alias bat="/usr/bin/batcat"
 [[ -f $(command -v fdfind) ]] && [[ ! -f $(command -v fd) ]] && alias fd="/usr/bin/fdfind"
+
+eval $(keychain --eval --quiet id_ed25519)

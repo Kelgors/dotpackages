@@ -6,6 +6,7 @@ dependencies:
   - curl
   - git
   - openssh
+  - keychain
   - man-db
   - exa
   - fzf

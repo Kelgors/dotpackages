@@ -10,3 +10,4 @@ dependencies:
   - thunar-volman
   - thunar-archive-plugin
   - file-roller
+  - gnome-calculator
