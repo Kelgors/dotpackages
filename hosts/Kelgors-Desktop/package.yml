@@ -9,7 +9,6 @@ dependencies:
 - dot:wm-hyprland
 - dot:kelgors-terminal
 - dot:kelgors-desktop
-- dot:flatpak
 - flatpak:md.obsidian.Obsidian
 - flatpak:net.lutris.Lutris
 - flatpak:com.github.IsmaelMartinez.teams_for_linux
