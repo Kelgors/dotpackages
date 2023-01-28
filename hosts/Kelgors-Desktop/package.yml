@@ -17,4 +17,3 @@ dependencies:
 - flatpak:org.musicbrainz.Picard
 - flatpak:org.onlyoffice.desktopeditors
 - dot:flatpak
-- emacs
