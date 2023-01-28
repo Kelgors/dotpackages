@@ -3,7 +3,6 @@ pre_install: |
 dependencies:
 - dot:base
 - rust
-- rust-src
 - dot:gpu-amd-intel
 - dot:greetd-tuigreet
 - dot:wm-hyprland
