@@ -17,3 +17,4 @@ dependencies:
 - dot:flatpak
 - rust
 - rust2
+- rust3
