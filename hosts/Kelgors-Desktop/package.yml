@@ -2,7 +2,6 @@ pre_install: |
   paru -Sy
 dependencies:
 - dot:base
-- rust
 - dot:gpu-amd-intel
 - dot:greetd-tuigreet
 - dot:wm-hyprland
