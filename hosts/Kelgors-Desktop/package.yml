@@ -16,3 +16,4 @@ dependencies:
 - flatpak:org.onlyoffice.desktopeditors
 - dot:flatpak
 - rust
+- rust2
